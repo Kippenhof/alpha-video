@@ -273,8 +273,7 @@ def handle_query_intent(query):
     queue = QueueManager(search)
     playing = render_template('playing', song_name=song_name, channel_name=channel_name)
     stream_url = queue.start()
-    audio(playing)
-    return ytplay(stream_url)
+    return  audio(playing), ytplay(stream_url)
 
 
 
