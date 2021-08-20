@@ -229,6 +229,12 @@ def ytplay(video):
         return audio().play(video)
 
 
+@ask.intent('AMAZON.FallbackIntent')
+def handle_fallback_intent():
+    fallback = render_template('fallback')
+    return question(fallback)
+
+
 @ask.launch
 def launch():
     card_title = render_template('card_title')
