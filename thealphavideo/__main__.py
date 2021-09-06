@@ -13,7 +13,7 @@ import sqlite3
 import requests
 
 # version 1.8
-set_user('PRODUCTION')
+#set_user('PRODUCTION')
 
 
 def get_db_connection():
@@ -31,16 +31,6 @@ def get_post(post_id):
         abort(404)
     return post
 
-
-def start():
-    sentry_sdk.init(
-        dsn="https://d781c09d67f34a05b2b2d89193f4f2a0@o575799.ingest.sentry.io/5728581",
-        integrations=[FlaskIntegration()],
-        # Set traces_sample_rate to 1.0 to capture 100%
-        # of transactions for performance monitoring.
-        # We recommend adjusting this value in production.
-        traces_sample_rate=1.0
-    )
 
 
 ip = '0.0.0.0'  # System Ip
