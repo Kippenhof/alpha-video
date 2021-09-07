@@ -1,3 +1,11 @@
+# Looking for new maintainers.
+
+As much as I love this project, Its been slowing down for a long time. Due to my mew job taking up most my time I am halting this project. If you would like to take over this project please email ``` hello@andrewstech.me ```. Thankyou :)
+
+
+---------------------------------------------------------------------------
+
+
 # alpha-video!
 YouTube for your Alexa device.
 
